@@ -1,9 +1,82 @@
-@font-face {
-    font-family: 'norsebold';
-    src: url('norse-bold-webfont.woff2') format('woff2'),
-         url('norse-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+:root {
+    --white: rgb(255, 255, 255);
+    --blue: ;
+    --red: ;
+    --font-small: 12px;
+    --font-Medium: ;
+    --font-large: ;
 }
 
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-left {
+    width: 40%;
+    height: 100vh;
+    background: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.content-right {
+    width: 60%;
+}
+
+.logo-box {
+    background-color: rgba(0, 0, 0, 0.684);
+    position: absolute;
+    top: 16rem;
+    width: inherit;
+    height: 150px;
+    align-content: center;
+}
+
+.logo-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 125px;
+}
+
+.logo-text {
+    font-family: 'norsebold';
+    color: var(--white);
+    font-size: 98px;
+}
+
+.img-reference {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--font-small);
+    position: absolute;
+    bottom: 1rem;
+}
