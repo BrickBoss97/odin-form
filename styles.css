@@ -161,14 +161,31 @@ textarea {
     gap: 2px;
 }
 
-input{
+input {
     padding: 4px 8px;
     font-size: 16px;
-    border: 1px solid #cccccc;
+    border: 2px solid rgb(204, 204, 204);
+    transition: 
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+    border-radius: 4px;
 }
 
 input:focus {
-    border-color: blueviolet;
+    outline: none;
+    border-color: var(--blue);
+    box-shadow:
+        4.2px 4.3px 5.3px rgba(0, 0, 0, 0.028),
+        14.1px 14.3px 17.9px rgba(0, 0, 0, 0.042),
+        63px 64px 80px rgba(0, 0, 0, 0.07);
+}
+
+input:invalid {
+    border-color: var(--red);
+}
+
+::placeholder {
+    opacity: 0.4;
 }
 
 label {
