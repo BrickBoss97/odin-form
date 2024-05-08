@@ -7,19 +7,61 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="content">
-        <div class="content-left">
+    <div class="content-main">
+        <div class="panel-left">
             <div class="logo-box">
                 <div class="logo-content">
                     <img src="/images/odin-lined.png" alt="Odin Logo" class="logo">
                     <div class="logo-text">ODIN</div>
                 </div>
             </div>
-            <div class="img-reference">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            <div class="img-reference font-xsmall">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
             </div>
         </div>
-        <div class="content-right">
-
+        <div class="panel-right">
+            <div class="content-right">
+                <div class="text-long font-large">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                    Sign up now to get started.</div>
+                <div class="text-short font-large">You <em>know</em> you want to.</div>
+                <form action="" method="get" class="sign-up-form">
+                    <div class="form-container">
+                        <div class="form-cta font-large">Let's do this!</div>
+                        <div class="form-row">
+                            <div class="form-input">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="first-name">
+                            </div>
+                            <div class="form-input">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email">
+                            </div>
+                            <div class="form-input">
+                                <label for="phone-num">PHONE NUMBER</label>
+                                <input type="tel" id="phone-num">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-input">
+                                <label for="pass-main">PASSWORD</label>
+                                <input type="password" id="pass-main">
+                                <div class="password-error">*Passwords do not match</div>
+                            </div>
+                            <div class="form-input">
+                                <label for="pass-confirm">CONFIRM PASSWORD</label>
+                                <input type="password" id="pass-confirm">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="submit-btn font-medium" type="submit">Create Account</button>
+                </form>
+                <div class="text-login font-medium">Already have an account? <a href="./">Log in</a></div>
+            </div>
         </div>
     </div>
 </body>

@@ -1,10 +1,31 @@
 :root {
     --white: rgb(255, 255, 255);
-    --blue: ;
-    --red: ;
-    --font-small: 12px;
-    --font-Medium: ;
-    --font-large: ;
+    --blue: rgb(106, 118, 218);
+    --red: rgb(188, 101, 96);
+    --green: rgb(81, 97, 64); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+.font-xsmall {
+    font-size: 12px;
+}
+
+.font-small {
+    font-size: 16px;
+}
+
+.font-medium {
+    font-size: 18px;
+}
+
+.font-large {
+    font-size: 22px;
+    font-weight: bold;
 }
 
 @font-face {
@@ -24,16 +45,16 @@ body {
     padding: 0;
     height: 100vh;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 550;
     font-style: normal;
+    color: rgb(16, 16, 16);
 }
 
-.content {
+.content-main {
     display: flex;
-    flex-direction: column;
 }
 
-.content-left {
+.panel-left {
     width: 40%;
     height: 100vh;
     background: url(images/halie-west-25xggax4bSA-unsplash.jpg);
@@ -44,14 +65,18 @@ body {
     justify-content: center;
 }
 
-.content-right {
+.panel-right {
     width: 60%;
+    background-color: rgb(248, 249, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .logo-box {
     background-color: rgba(0, 0, 0, 0.684);
     position: absolute;
-    top: 16rem;
+    top: 18rem;
     width: inherit;
     height: 150px;
     align-content: center;
@@ -74,9 +99,112 @@ body {
 }
 
 .img-reference {
-    color: var(--white);
+    color: rgba(248, 249, 250, 0.791);
     text-decoration: none;
-    font-size: var(--font-small);
     position: absolute;
     bottom: 1rem;
+}
+
+.text-long,
+.text-short,
+.submit-btn,
+.text-login {
+    margin-left: 48px;
+    margin-right: 64px;
+    margin-bottom: 32px;
+    max-width: 80ch;
+}
+
+.form-container {
+    background-color: var(--white);
+    /* height: 400px; */
+    margin-top: 64px;
+    margin-bottom: 48px;
+    padding: 24px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-shadow:
+        0px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        0px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        0px 12.5px 10px rgba(0, 0, 0, 0.035),
+        0px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        0px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        0px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 64px;
+    row-gap: 32px;
+}
+
+.form-input {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+input{
+    padding: 4px 8px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+}
+
+input:focus {
+    border-color: blueviolet;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(115, 118, 126);
+}
+
+.password-error {
+    color: var(--red);
+    font-size: 10px;
+}
+
+.submit-btn {
+    background-color: var(--green);
+    border: none;
+    color: rgb(248, 249, 250);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 48px;
+    border-radius: 8px;
+    border-color: #2a2a2a;
+    cursor: pointer;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.text-login>a {
+    color: var(--green);
+    text-decoration: none;
+    font-weight: 600;
 }
