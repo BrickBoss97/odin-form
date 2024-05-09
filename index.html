@@ -29,32 +29,32 @@
                         <div class="form-row">
                             <div class="form-input">
                                 <label for="first-name">FIRST NAME</label>
-                                <input type="text" id="first-name" placeholder="John">
+                                <input type="text" id="first-name" name="first-name" placeholder="John">
                             </div>
                             <div class="form-input">
                                 <label for="last-name">LAST NAME</label>
-                                <input type="text" id="last-name" placeholder="Doe">
+                                <input type="text" id="last-name" name="last-name" placeholder="Doe">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-input">
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email" placeholder="name@domain.com">
+                                <input type="email" id="email" name="email" placeholder="name@domain.com">
                             </div>
                             <div class="form-input">
                                 <label for="phone-num">PHONE NUMBER</label>
-                                <input type="tel" id="phone-num" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                <input type="tel" id="phone-num" name="phone-number" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-input">
                                 <label for="pass-main">PASSWORD</label>
-                                <input type="password" id="pass-main">
-                                <div class="password-error">*Passwords do not match</div>
+                                <input type="password" id="pass-main" name="password">
+                                <div class="password-error"></div>
                             </div>
                             <div class="form-input">
                                 <label for="pass-confirm">CONFIRM PASSWORD</label>
-                                <input type="password" id="pass-confirm">
+                                <input type="password" id="pass-confirm" name="confirm-password" onkeyup="validatePassword()">
                             </div>
                         </div>
                     </div>

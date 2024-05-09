@@ -197,6 +197,7 @@ label {
 .password-error {
     color: var(--red);
     font-size: 10px;
+    height: 10px;
 }
 
 .submit-btn {
@@ -218,6 +219,11 @@ label {
         22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
         41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
         100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.submit-btn:disabled {
+    background-color: rgb(102, 102, 102);
+    cursor: not-allowed;
 }
 
 .text-login>a {
